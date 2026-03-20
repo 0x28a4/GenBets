@@ -1,0 +1,45 @@
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.env
+node_modules
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+/context
+/frontend/.next
+/frontend/next-env.d.ts
+/frontend/bun.lock
+/frontend/package-lock.json
+*.compiled.js
+package-lock.json
+
+# Temp deploy/test scripts
+deploy-direct.mjs
+deploy-rpc.mjs
+scrape-portal.mjs
+test-read.mjs
+
+# Contract iterations (only genbets.py is the final version)
+contracts/genbets_v*.py
+contracts/genbets_studio.py
+
+# Original boilerplate files (replaced by GenBets)
+contracts/football_bets.py
+frontend/components/BetsTable.tsx
+frontend/components/CreateBetModal.tsx
+frontend/components/Leaderboard.tsx
+frontend/components/Navbar.tsx
+frontend/lib/contracts/FootballBets.ts
+frontend/lib/hooks/useFootballBets.ts
+test/test_footbal_bet.py
+test/football_bets_get_contract_schema_for_code.py
